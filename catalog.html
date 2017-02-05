@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+      <title>"NЁRDS" - Магазин готовых шаблонов</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="user-block">
+       <a href="index.html"><img src="nerds-to-main" width="30" heigth="58" alt="На главную"></a>
+      </div>
+      <div class="container">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="studio.html">Студия</a>
+            </li>
+            <li>
+              <a href="clients.html">Клиенты</a>
+            </li>
+            <li>
+              <a href="shop.html">Магазин</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="" href="">Корзина</a>
+        </div>
+      </div>
+    </header>
+    <div class="title">
+      <h1>Магазин готовых шаблонов</h1>
+    </div>
+
+    <main class="container">
+      <div class="shop">
+	<section class="filtr">
+          <h3>Стоимость:</h3>
+           <form class="filtr">
+	            <div class="slider" data-role="fieldcontain">
+	               <label for="slider"></label>
+ 	               <input type="range" name="slider" id="slider" value="10000" min="0" max="15000" step="500">
+               </div>
+               <div class="price-field">
+                 <label for="price-field1">От</label>
+                 <input type="text" name="price-field1">
+               </div>
+               <div class="price-field">
+                 <label for="price-field2">До</label>
+                 <input type="text" name="price-field2">
+               </div>
+               <div class="grid">
+                 <h3>Сетка:</h3>
+                 <ul>
+                   <li>
+                     <!-- не уверен надо ли прописывать тут id и name но вставил на тот случай что они будут иметь значение в дальнейшем-->
+                     <input id="filtr1" type="radio" name="radio-filtr" checked>
+                     <label for="filtr1">Адаптивная</label>
+                   </li>
+                   <li>
+                     <input id="filtr2" type="radio" name="radio-filtr">
+                     <label for="filtr2">Фиксированная</label>
+                   </li>
+                   <li>
+                     <input id="filtr3" type="radio" name="radio-filtr">
+                     <label for="filtr3">Резиновая</label>
+                   </li>
+                 </ul>
+               </div>
+	              <div class="specialyties">
+                  <h3>Особенности:</h3>
+                <ul>
+                  <li>
+                    <input id="1a" type="checkbox" name="1st" checked>
+                    <label for="1a">Слайдер</label>
+                  </li>
+                  <li>
+                    <input id="2a" type="checkbox" name="2nd">
+                    <label for="2a">Блок преимуществ</label>
+                  </li>
+                  <li>
+                    <input id="3a" type="checkbox" name="3rd" checked>
+                    <label for="3a">Новости</label>
+                  </li>
+                  <li>
+                    <input id="4a" type="checkbox" name="4th">
+                    <label for="4a">Галерея</label>
+                  </li>
+                  <li>
+                    <input id="5a" type="checkbox" name="5th">
+                    <label for="5a">Корзина</label>
+                  </li>
+                </ul>
+	             </div>
+          <a class="btn" href="#">Показать</a>
+      </form>
+
+      <div class="sort-container">
+        <div class="sort-container__name">сортировать:</div>
+        <div class="sort-container__list-items">
+      	   <div class="price active" id="price">По цене</div>
+      	   <div class="type" id="type">По типу</div>
+      	   <div class="name" id="name">По названию</div>
+        </div>
+        <div class="sort-container__arrows">
+      	   <div class="arrow-down active" id="arrow-down">&#9660;</div>
+      	   <div class="arrow-up" id="arrow-up">&#9650;</div>
+        </div>
+      </div>
+
+	    <section class="sites"> <!--для каждого шаблона есть слайдер наверху, если надо то и его вставлю-->
+        <article class="item-pic item1">
+          <div class="img-box">
+            <ul> <!-- Слайдер товара -->
+              <li>
+                <img src="sedona1.jpg" height="" width="" alt="Sedona">
+              </li>
+              <li>
+                <img src="sedona2.jpg" height="" width="" alt="image02">
+              </li>
+              <li>
+                <img src="sedona3.jpg" height="" width="" alt="image03">
+              </li>
+            </ul>
+          </div>
+          <div class="item-description">
+            <div class="price"> <!--меню цены по наведению мышкой в будущем-->
+              <p class="price-name">Sedona</p>
+              <p class="price-text">Информационный сайт<br>
+                для туристов</p>
+              <a class="price-btn" href="#">9900 руб.</a>
+            </div>
+          </div>
+        </article>
+
+          <article class="item-pic item2">
+            <div class="img-box">
+              <ul>
+                <li>
+                  <img src="pink1.jpg" height="" width="" alt="PINK">
+                </li>
+                <li>
+                  <img src="pink2.jpg" height="" width="" alt="image02">
+                </li>
+                <li>
+                  <img src="pink3.jpg" height="" width="" alt="image03">
+                </li>
+              </ul>
+            </div>
+            <div class="item-description">
+              <div class="price">
+                <p class="price-text">0 руб.</p>
+                <a class="price-btn" href="#">купить</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="item-pic item3">
+            <div class="img-box">
+              <ul>
+                <li>
+                  <img src="borodinsky1.jpg" height="" width="" alt="Барбершоп Бородинский">
+                </li>
+                <li>
+                  <img src="borodinsky2.jpg" height="" width="" alt="image02">
+                </li>
+                <li>
+                  <img src="borodinsky3.jpg" height="" width="" alt="image03">
+                </li>
+              </ul>
+            </div>
+            <div class="item-description">
+              <div class="price">
+                <p class="price-text">0 руб.</p>
+                <a class="price-btn" href="#">купить</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="item-pic item4">
+            <div class="img-box">
+              <ul>
+                <li>
+                  <img src="mishka1.jpg" height="" width="" alt="Mishka">
+                </li>
+                <li>
+                  <img src="mishka2.jpg" height="" width="" alt="image02">
+                </li>
+                <li>
+                  <img src="mishka3.jpg" height="" width="" alt="image03">
+                </li>
+              </ul>
+            </div>
+            <div class="item-description">
+              <div class="price">
+                <p class="price-text">0 руб.</p>
+                <a class="price-btn" href="#">купить</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="item-pic item5">
+            <div class="img-box">
+              <ul>
+                <li>
+                  <img src="studybook1.jpg" height="" width="" alt="Учебник">
+                </li>
+                <li>
+                  <img src="studybook2.jpg" height="" width="" alt="image02">
+                </li>
+                <li>
+                  <img src="studybook3.jpg" height="" width="" alt="image03">
+                </li>
+              </ul>
+            <div class="item-description">
+               <div class="price">
+                <p class="price-text">0 руб.</p>
+                <a class="price-btn" href="#">купить</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="item-pic item6">
+            <div class="img-box">
+              <ul>
+                <li>
+                  <img src="Kvast1.jpg" height="" width="" alt="Кваст">
+                </li>
+                <li>
+                  <img src="Kvast2.jpg" height="" width="" alt="image02">
+                </li>
+                <li>
+                  <img src="Kvast3.jpg" height="" width="" alt="image03">
+                </li>
+            </div>
+            <div class="item-description">
+              <div class="price">
+                <p class="price-text">0 руб.</p>
+                <a class="price-btn" href="#">купить</a>
+              </div>
+            </div>
+          </article>
+	    </section>
+
+           <div class="page-number">
+	            <ul>
+                <li>
+                   1
+                </li>
+                <li>
+                  <a class="btn" href="#">2</a>
+                </li>
+                <li>
+                  <a class="btn" href="#">3</a>
+                </li>
+              </ul>
+	        </div>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <section class="footer-contacts">
+          <h3>NЁRDS DESIGN STUDIO</h3><br>
+          191186, Санкт-Петербург,<br>
+          ул. Б. Конюшенная, д. 19/8<br>
+          Телефон: +7 (812) 275-75-75<br>
+          <a class="find-us" href="#">Напишите нам</a>
+        </section>
+      </div>
+      <div class="footer">
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-lets-friends">
+          <h2>Давайте дружить, это выгодно!</h2>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </section>
+      </div>
+    </footer>
+
+  </body>
+</html>
