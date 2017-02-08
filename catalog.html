@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
       <title>"NЁRDS" - Магазин готовых шаблонов</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
       <div class="user-block">
-       <a href="index.html"><img src="nerds-to-main" width="30" heigth="58" alt="На главную"></a>
+       <a href="index.html"><img src="img/nerds-logo.png" width="160" height="65" alt="На главную"></a>
       </div>
       <div class="container">
         <nav class="main-navigation">
@@ -27,6 +28,7 @@
           </ul>
         </nav>
         <div class="user-block">
+          <img src="img/cart-icon.png" width="15" height="15" alt="Корзина">
           <a class="" href="">Корзина</a>
         </div>
       </div>
@@ -58,14 +60,17 @@
                    <li>
                      <!-- не уверен надо ли прописывать тут id и name но вставил на тот случай что они будут иметь значение в дальнейшем-->
                      <input id="filtr1" type="radio" name="radio-filtr" checked>
+                     <img class="radio radio1" src="img/radio-on.png" widht="25" height="25" alt="check-point"> <!--не знаю, нужен ли тут атрибут альт, так при прогрузке в месте кнопочки должен ли текст отображаться-->
                      <label for="filtr1">Адаптивная</label>
                    </li>
                    <li>
                      <input id="filtr2" type="radio" name="radio-filtr">
+                     <img class="radio radio2" src="img/radio-off.png" widht="25" height="25" alt="check-point">
                      <label for="filtr2">Фиксированная</label>
                    </li>
                    <li>
                      <input id="filtr3" type="radio" name="radio-filtr">
+                     <img class="radio radio3" src="img/radio-off.png" widht="25" height="25" alt="check-point">
                      <label for="filtr3">Резиновая</label>
                    </li>
                  </ul>
@@ -75,22 +80,27 @@
                 <ul>
                   <li>
                     <input id="1a" type="checkbox" name="1st" checked>
+                    <img class="radio check1" src="img/checkbox-on.png" widht="27" height="23" alt="check-point">
                     <label for="1a">Слайдер</label>
                   </li>
                   <li>
                     <input id="2a" type="checkbox" name="2nd">
+                    <img class="radio check2" src="img/checkbox-off.png" widht="23" height="23" alt="check-point">
                     <label for="2a">Блок преимуществ</label>
                   </li>
                   <li>
                     <input id="3a" type="checkbox" name="3rd" checked>
+                    <img class="radio check3" src="img/checkbox-on.png" widht="27" height="23" alt="check-point">
                     <label for="3a">Новости</label>
                   </li>
                   <li>
                     <input id="4a" type="checkbox" name="4th">
+                    <img class="radio check2" src="img/checkbox-off.png" widht="23" height="23" alt="check-point">
                     <label for="4a">Галерея</label>
                   </li>
                   <li>
                     <input id="5a" type="checkbox" name="5th">
+                    <img class="radio check2" src="img/checkbox-off.png" widht="23" height="23" alt="check-point">
                     <label for="5a">Корзина</label>
                   </li>
                 </ul>
@@ -113,18 +123,14 @@
 
 	    <section class="sites"> <!--для каждого шаблона есть слайдер наверху, если надо то и его вставлю-->
         <article class="item-pic item1">
+
           <div class="img-box">
-            <ul> <!-- Слайдер товара -->
-              <li>
-                <img src="sedona1.jpg" height="" width="" alt="Sedona">
-              </li>
-              <li>
-                <img src="sedona2.jpg" height="" width="" alt="image02">
-              </li>
-              <li>
-                <img src="sedona3.jpg" height="" width="" alt="image03">
-              </li>
-            </ul>
+            <div class="top-circle">
+              <span class="circle"></span>
+              <span class="circle"></span>
+              <span class="circle"></span>
+            </div>
+            <img src="img/img-sedona.jpg" height="576" width="360" alt="Sedona">
           </div>
           <div class="item-description">
             <div class="price"> <!--меню цены по наведению мышкой в будущем-->
@@ -138,108 +144,89 @@
 
           <article class="item-pic item2">
             <div class="img-box">
-              <ul>
-                <li>
-                  <img src="pink1.jpg" height="" width="" alt="PINK">
-                </li>
-                <li>
-                  <img src="pink2.jpg" height="" width="" alt="image02">
-                </li>
-                <li>
-                  <img src="pink3.jpg" height="" width="" alt="image03">
-                </li>
-              </ul>
+              <div class="top-circle">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <img src="img/img-pink.jpg" height="576" width="360" alt="PINK">
             </div>
             <div class="item-description">
               <div class="price">
-                <p class="price-text">0 руб.</p>
-                <a class="price-btn" href="#">купить</a>
+                <p class="price-name">Pink app</p>
+                <p class="price-text">Продуктовый лендинг приложения для iOS и Androind</p>
+                <a class="price-btn" href="#">9900 руб.</a>
               </div>
             </div>
           </article>
 
           <article class="item-pic item3">
             <div class="img-box">
-              <ul>
-                <li>
-                  <img src="borodinsky1.jpg" height="" width="" alt="Барбершоп Бородинский">
-                </li>
-                <li>
-                  <img src="borodinsky2.jpg" height="" width="" alt="image02">
-                </li>
-                <li>
-                  <img src="borodinsky3.jpg" height="" width="" alt="image03">
-                </li>
-              </ul>
+              <div class="top-circle">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <img src="img/img-barbershop.jpg" height="576" width="360" alt="Барбершоп Бородинский">
             </div>
             <div class="item-description">
               <div class="price">
-                <p class="price-text">0 руб.</p>
-                <a class="price-btn" href="#">купить</a>
+                <p class="price-name">Barbershop</p>
+                <p class="price-text">Сайт салоны красоты. Для мужчин, да.</p>
+                <a class="price-btn" href="#">9900 руб.</a>
               </div>
             </div>
           </article>
 
           <article class="item-pic item4">
             <div class="img-box">
-              <ul>
-                <li>
-                  <img src="mishka1.jpg" height="" width="" alt="Mishka">
-                </li>
-                <li>
-                  <img src="mishka2.jpg" height="" width="" alt="image02">
-                </li>
-                <li>
-                  <img src="mishka3.jpg" height="" width="" alt="image03">
-                </li>
-              </ul>
+              <div class="top-circle">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <img src="img/img-mishka.jpg" height="576" width="360" alt="Mishka">
             </div>
             <div class="item-description">
               <div class="price">
-                <p class="price-text">0 руб.</p>
-                <a class="price-btn" href="#">купить</a>
+                <p class="price-name">Mishka</p>
+                <p class="price-text">Интернет-магазин вязанных игрушек</p>
+                <a class="price-btn" href="#">9900 руб.</a>
               </div>
             </div>
           </article>
 
           <article class="item-pic item5">
             <div class="img-box">
-              <ul>
-                <li>
-                  <img src="studybook1.jpg" height="" width="" alt="Учебник">
-                </li>
-                <li>
-                  <img src="studybook2.jpg" height="" width="" alt="image02">
-                </li>
-                <li>
-                  <img src="studybook3.jpg" height="" width="" alt="image03">
-                </li>
-              </ul>
+              <div class="top-circle">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <img src="img/img-aplus.jpg" height="576" width="360" alt="Aplus">
             <div class="item-description">
                <div class="price">
-                <p class="price-text">0 руб.</p>
-                <a class="price-btn" href="#">купить</a>
+                <p class="price-name">A plus</p>
+                <p class="price-text">Лендинг курсов повышения квалификации</p>
+                <a class="price-btn" href="#">9900 руб.</a>
               </div>
             </div>
           </article>
 
           <article class="item-pic item6">
             <div class="img-box">
-              <ul>
-                <li>
-                  <img src="Kvast1.jpg" height="" width="" alt="Кваст">
-                </li>
-                <li>
-                  <img src="Kvast2.jpg" height="" width="" alt="image02">
-                </li>
-                <li>
-                  <img src="Kvast3.jpg" height="" width="" alt="image03">
-                </li>
+              <div class="top-circle">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+              </div>
+              <img src="img/img-kvast.jpg" height="576" width="360" alt="Кваст">
             </div>
             <div class="item-description">
               <div class="price">
-                <p class="price-text">0 руб.</p>
-                <a class="price-btn" href="#">купить</a>
+                <p class="price-name">Кваст</p>
+                <p class="price-text">Промо-сайт производителя крафтового кваса</p>
+                <a class="price-btn" href="#">9900 руб.</a>
               </div>
             </div>
           </article>
@@ -269,6 +256,8 @@
           ул. Б. Конюшенная, д. 19/8<br>
           Телефон: +7 (812) 275-75-75<br>
           <a class="find-us" href="#">Напишите нам</a>
+          <img class="map" src="img/map.jpg" widht="1440" height="416" alt="map">
+          <img class="map-point" src="img/map-point.png" widht="231" height="190" alt="map-point">
         </section>
       </div>
       <div class="footer">
@@ -281,6 +270,25 @@
           <h2>Давайте дружить, это выгодно!</h2>
           <p>Скидка 10% для друзей из социальных сетей</p>
         </section>
+      </div>
+      <!--вставляю форму для отправки заявки, её теперь надо как-то подключить?-->
+      <div class="write-us">
+        <button class="write-us-close" type="button" title="Закрыть"></button>
+        <form class="write-us-form" action="#" method="post">
+          <div class="write-us-enter">
+            <div class="enter-name">
+              <label for="user-field">Ваше имя:</label>
+              <input type="text" name="user" id="user-field" placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div class="enter-email">
+              <label for="email-field">Ваш e-mail:</label>
+              <input type="text" name="email" id="email-field" placeholder="Для отправки ответа">
+            </div>
+          </div>
+          <label for="text-field">Текст письма:</label>
+          <textarea name="text" id="text-field" placeholder="В свободной форме"></textarea>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
       </div>
     </footer>
 
